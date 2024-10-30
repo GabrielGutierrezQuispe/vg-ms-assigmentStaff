@@ -39,7 +39,7 @@ public class AssignmentStaffService {
                 .flatMap(staff -> {
                     if (!"docente".equalsIgnoreCase(staff.getRol())) {
                         return Mono.error(new IllegalArgumentException("El staff con ID "
-                                + staff.getId_institucional_staff() + " no tiene el rol de Docente"));
+                                + staff.getId() + " no tiene el rol de Docente"));
                     }
                     // Buscar si el docente ya tiene una asignación
                     return assignmentStaffRepository.findByTeacher(assignmentStaff.getTeacher())
