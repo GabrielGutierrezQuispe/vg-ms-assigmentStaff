@@ -6,13 +6,16 @@ import org.springframework.data.annotation.Id;
 @Data
 public class InstitucionalStaff {
 
-    @Id
-    private String id_institucional_staff;
-    private String document_type;
-    private String document_number;
-    private String father_lastname;
-    private String mother_lastname;
+    @@Id
+    private String id;
+    private String fatherLastname;
+    private String motherLastname;
     private String name;
-    private String rol;
+    private LocalDate birthdate;
+    private String documentType;
+    private String documentNumber;
     private String status;
+    private String rol;
+
+
 }
