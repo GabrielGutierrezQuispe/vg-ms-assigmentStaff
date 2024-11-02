@@ -13,6 +13,7 @@ import reactor.core.publisher.Mono;
 
 @Slf4j
 @RestController
+@CrossOrigin(value = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE})
 @RequestMapping("/management/${api.version}/assignment-staff")
 public class AssignmentStaffController {
 
