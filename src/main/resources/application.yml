@@ -33,4 +33,4 @@ services:
   didactic-unit:
     url:  ${DIDACTIC_UNIT_SERVICE_URL:https://vg-ms-didactic-unit-production.up.railway.app/common/api/v1/didactic-unit}
   institucional-staff:
-    url:  ${INSTITUCIONAL_STAFF_SERVICE_URL:https://vg-ms-institucional-staff-production-4fb6.up.railway.app/management/api/v1/institucional-staff}
+    url:  ${INSTITUCIONAL_STAFF_SERVICE_URL:https://vg-ms-institucional-staff-production.up.railway.app/management/api/v1/institucional-staff}
